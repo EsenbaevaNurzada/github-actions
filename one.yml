@@ -1,8 +1,6 @@
 name: first project
-on: 
-    push:
-    schedule:
-      - cron: "* * * * * "
+on:
+  workflow_dispatch
 jobs:
     run-shell-command:
       runs-on: ubuntu-latest
