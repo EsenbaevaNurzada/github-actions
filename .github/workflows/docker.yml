@@ -1,5 +1,5 @@
 name: docker
-on: pull_request
+on: push
 jobs:
   node_docker:
     runs-on: ubuntu-latest
