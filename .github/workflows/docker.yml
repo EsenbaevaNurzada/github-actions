@@ -1,0 +1,12 @@
+name: docker
+on: pull_request
+jobs:
+  node_docker:
+    runs-on: ubuntu-latest
+    container:
+      image: nginx:1.21.4
+    steps:
+      - name: node_version
+        run: |
+          node -v
+          cat /etc/os-release
