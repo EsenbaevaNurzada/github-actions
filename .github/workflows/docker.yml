@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: nginx:1.21.4
+      ports:
+        - 8080:8080
     steps:
       - name: nginx_version
         run: |

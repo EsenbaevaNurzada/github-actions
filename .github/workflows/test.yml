@@ -1,0 +1,10 @@
+name: separate action file
+on: push
+jobs:
+  action-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: action-file-separate
+        uses: action/checkout@v2
+      - name: sajfis
+        uses: ./.github/actions/test
