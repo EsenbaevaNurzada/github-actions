@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: action-file-separate
-        uses: action/checkout@v2
+        uses: action/checkout@v1
       - name: sajfis
         uses: ./.github/actions/test
